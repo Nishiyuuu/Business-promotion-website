@@ -126,8 +126,9 @@ h1, h2, h3, h4, h5, h6, p{
 /* HERO-SECTION */
 
     .hero-section{
-        margin-bottom: 100px;
+        margin-bottom: 105px;
     }
+
     .hero{
         display: flex;
         justify-content: center;
@@ -197,4 +198,66 @@ h1, h2, h3, h4, h5, h6, p{
 
     .hero .buttons .btn .svg{
         margin-right: 8.66px;
+    }
+
+/* FEATURE */
+
+    .feature-section{
+        margin-bottom: 50px;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature .h2{
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        color: #22343d;
+        width: 539px;
+        padding: 0 15px;
+        margin-bottom: 50px;
+    }
+
+    .feature .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .feature .menu .item .svg{
+        margin-bottom: 26px;
+    }
+
+    .feature .menu .item .h3{
+        font-weight: 600;
+        font-size: 22px;
+        color: #22343d;
+        margin-bottom: 13px;
+    }
+
+    .feature .menu .item .p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.625;
+        color: #22343d;
+        width: 255px;
+    }
+
+    .feature .btn{
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 4px;
+        border: none;
+        padding: 15px 32px 14px 34px;
+        background-color: #02897a;
+        cursor: pointer;
+        margin-bottom: 50px;
     }
