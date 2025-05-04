@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,44 +12,42 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-content">
-            <nav>
-                <a href="#" class="link">
-                    <img class="image" src="./images/logo.jpg" alt="logo" width="40" height="36">
-                    Product
-                </a>
-                <ul class="link-menu">
-                    <li class="item">
-                        <a class="link" href="#">Product</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#">Pricing</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#">Customers</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="#">Resources</a>
-                    </li>
-                </ul>
-                <ul class="sign-menu">
-                    <li class="item"><button class="sign-in-btn">Sign In</button></li>
-                    <li class="item"><button class="sign-up-btn">Sign Up</button></li>
-                </ul>
-            </nav>
+        <div class="container header-content">
+          <div class="nav-left">
+            <a href="#" class="link-logo">
+              <img class="image" src="./images/logo.jpg" alt="logo" width="40" height="36" />Product
+            </a>
+          </div>
+      
+          <div class="nav-center">
+            <ul class="link-menu">
+              <li class="item"><a class="link" href="#">Product</a></li>
+              <li class="item"><a class="link" href="#">Pricing</a></li>
+              <li class="item"><a class="link" href="#">Customers</a></li>
+              <li class="item"><a class="link" href="#">Resources</a></li>
+            </ul>
+          </div>
+      
+          <div class="nav-right">
+            <ul class="sign-menu">
+              <li class="item"><button class="sign-in-btn">Sign In</button></li>
+              <li class="item"><button class="sign-up-btn">Sign Up</button></li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
+      
     <main class="main">
         <div class="main-content">
-            <section class="hero-section">
+            <section class="container hero-section">
                 <div class="hero">
                     <div class="left">
                         <h1 class="h1">Work at the speed
                             of thought</h1>
-                        <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+                        <p class="p">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
                         <div class="buttons">
-                            <button class="button">Get started</button>
-                            <a href="#" class="link"><svg width="20" height="18.02" class="svg"><use href="./images/icons.svg#icon-triangle"></use></svg>Watch whe Video</a>
+                            <button class="btn">Get started</button>
+                            <button class="btn"><svg class="svg" width="20" height="18"><use href="./images/icons.svg#icon-triangle"></use></svg>Watch the Video</button>
                         </div>
                     </div>
                     <div class="right">
@@ -362,7 +361,7 @@
             </section>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <div class="footer-content">
             <ul class="menu">
                 <li class="item">

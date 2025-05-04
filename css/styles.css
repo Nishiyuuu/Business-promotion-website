@@ -1,0 +1,199 @@
+--root{
+    --green-figma: #02897a;
+    --blue-figma: #4d8dff;
+    --purple-figma: #740a76;
+    --grey-figma: #22343d;
+    --white-figma: #ffffff;
+    --red-figma: #f03e3d;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: #22343d;
+    background-color: var(--white-figma);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+
+.container{
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header-content nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left, .nav-center, .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-content .link-logo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.93333;
+    color: #173a56;
+}
+.header-content .link-logo img{
+    margin-right: 16px;
+}
+
+.header-content .nav-center .link-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.header-content .nav-center .link-menu .item .link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #22343d;
+    transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-content .nav-center .link-menu .item .link:hover,
+.header-content .nav-center .link-menu .item .link:focus{
+    font-weight: 600;
+}
+
+.header-content .nav-right .sign-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    margin: 19px 0;
+}
+
+.header-content .nav-right .sign-menu .item button{
+    background-color: var(--white-figma);
+    padding: 9px 24px;
+
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #173a56;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-content .nav-right .sign-menu .item button:hover,
+.header-content .nav-right .sign-menu .item button:focus{
+    border: none;
+    color: white;
+    background-color: #02897a;
+}
+
+/* HERO-SECTION */
+
+    .hero-section{
+        margin-bottom: 100px;
+    }
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero .left{
+        margin-right: 35px;
+    }
+
+    .hero .left .h1{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        color: #22343d;
+        padding-right: 52px;
+        margin-right: 13px;
+        margin-bottom: 18px;
+    }
+
+    .hero .left .p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.55556;
+        color: #22343d;
+        margin-bottom: 45px;
+    }
+
+    .hero .buttons{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .hero .buttons .btn{
+        border: none;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration-skip-ink: none;
+        color: #02897a;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-right: 30px;
+        transition: background-color, color, text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 4px;
+        cursor: pointer;
+        width: 178px;
+        height: 53px;
+    }
+
+    .hero .buttons .btn:hover:nth-child(1),
+    .hero .buttons .btn:focus:nth-child(1){
+        background-color: #02897a;
+        color: white;
+    }
+
+    .hero .buttons .btn:hover:nth-child(2),
+    .hero .buttons .btn:focus:nth-child(2){
+        text-decoration: underline;
+    }
+
+    .hero .buttons .btn .svg{
+        margin-right: 8.66px;
+    }
